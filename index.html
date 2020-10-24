@@ -7,13 +7,14 @@
     <title>Podcast Channel</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/570851d675.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <img class="logo_header" src="/PODCAST_CHANNEL/images/logo.svg" alt="logo" class="logo">
+        <img class="logo_header" src="/PODCAST_CHANNEL/images/logo.svg" alt="logo">
         <input class="activar_menu" type="checkbox">
         <button class="cerrado"><em class="fas fa-times"></em></button>
         <button class="abierto"><em class="fas fa-bars"></em></button>
@@ -32,10 +33,13 @@
 
     <main>
         <section class="secciones">
-            <h1>Hello <span id="tachado">world</span> pale blue dot<span id="punto">.</span></h1>
-            <div class="parrafo">
-                <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
-            </div><br>
+            <div class="texto">
+                <h1>Hello <span id="tachado">world</span> pale blue dot<span id="punto">.</span></h1>
+                <div class="parrafo">
+                    <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios,
+                        todos los jueves cada 15 días.</p>
+                </div><br>
+            </div>
             <div class="contenedor_boton_verde">
                 <a href="/" class="boton_verde">CONOCÉ MÁS</a>
             </div>
@@ -45,87 +49,122 @@
 
                 <div class="podcast_general">
                     <div class="contenedor_titulo_episodios">
-                        <h3>Episodios</h3>
+                        <div class="texto altura_episodios">
+                            <h3><span class="texto_cajas_azules">Episodios</span></h3>
+                        </div>
                     </div>
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="300" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="300" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="300" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="300" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <div class="contenedor_iframe_flex">
+                        <div class="contenedor_iframe">
+                            <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+                                title="Podcast"></iframe>
+                        </div>
+                        <div class="contenedor_iframe">
+                            <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
+                                title="Podcast"></iframe>
+                        </div>
+                        <div class="contenedor_iframe">
+                            <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+                                title="Podcast"></iframe>
+                        </div>
+                        <div class="contenedor_iframe">
+                            <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
+                                title="Podcast"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="seccion_donde_venimos">
             <div class="seccion_telefono">
-                <img id="phone" src="/PODCAST_CHANNEL/images/phone.png" alt="phone">
-                <h3 id="seccion_nosotros">De dónde venimos</h3>
-                <p class="parrafo ">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity,
-                    in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-            </div>
-        </section>
-
-        <section class="secciones ">
-            <div id="seccion_entrevistas" class="text ">
-                <h3>Invitadas/os estelares</h3><br>
-            </div>
-            <div id="imagenes_invitados ">
-                <img class="foto " src="/PODCAST_CHANNEL/images/grace-hopper.png " alt="grace-hooper ">
-                <img class="foto " src="/PODCAST_CHANNEL/images/Katie-Bouman.png " alt="katie-bouman ">
-                <img class="foto " src="/PODCAST_CHANNEL/images/Margaret_Hamilton.png " alt="margaret-hamilton ">
-                <img class="foto " src="/PODCAST_CHANNEL/images/An E.R.A.Univac 1103 computer in the 1950s.png " alt="computers ">
-                <img class="foto " src="/PODCAST_CHANNEL/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png " alt="operators ">
-                <img class="foto " src="/PODCAST_CHANNEL/images/susan-kare.png " alt="susan-kare ">
-            </div>
-        </section>
-
-        <section class="secciones ">
-            <div id="seccion_topicos" class="text ">
-                <h3>Algunos de nuestros temas</h3><br>
-            </div>
-            <div id="temas ">
-                <div class="contenedor_iconos_temas ">
-                    <img src="/PODCAST_CHANNEL/images/icon1.svg " alt="icon1 ">
-                    <p class="parrafoTemas ">Trabajo remoto</p>
+                <div class="telefono_desktop">
+                    <img class="phone" src="/PODCAST_CHANNEL/images/phone.png" alt="phone">
                 </div>
-                <div class="contenedor_iconos_temas ">
-                    <img src="/PODCAST_CHANNEL/images/icon2.svg " alt="icon2 ">
-                    <p class="parrafoTemas ">Repensando la programación</p>
-                </div>
-                <div class="contenedor_iconos_temas ">
-                    <img src="/PODCAST_CHANNEL/images/icon3.svg " alt="icon3 ">
-                    <p class="parrafoTemas ">Bases del código</p>
-                </div>
-                <div class="contenedor_iconos_temas ">
-                    <img src="/PODCAST_CHANNEL/images/icon4.svg " alt="icon4 ">
-                    <p class="parrafoTemas ">Seguridad informática</p>
+                <div class="texto">
+                    <h3 id="seccion_nosotros">De dónde venimos</h3>
+                    <p class="parrafo ">Our posturings, our imagined self-importance, the delusion that we have some
+                        privileged position in the Universe, are challenged by this point of pale light. Our planet is a
+                        lonely speck in the great enveloping cosmic dark. In our
+                        obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us
+                        from ourselves.</p>
                 </div>
             </div>
         </section>
 
-        <div class="footer_azul ">
-            <section class="secciones ">
-                <div class=" ">
-                    <!--contenedor azul-->
-                    <h3 class="texto_ultimas_novedades ">¿Querés las últimas novedades?</h3><br>
-                    <div class="contenedor_episodios ">
-                        <a href="/ " class="boton_verde boton_verde_episodios ">ESCUCHÁ LOS EPISODIOS</a>
+        <section class="secciones">
+            <div id="seccion_entrevistas" class="text">
+                <div class="texto">
+                    <h3>Invitadas/os estelares</h3><br>
+                </div>
+            </div>
+            <div id="imagenes_invitados">
+                <img class="foto" src="/PODCAST_CHANNEL/images/grace-hopper.png" alt="grace-hooper">
+                <img class="foto" src="/PODCAST_CHANNEL/images/Katie-Bouman.png" alt="katie-bouman">
+                <img class="foto" src="/PODCAST_CHANNEL/images/Margaret_Hamilton.png" alt="margaret-hamilton">
+                <img class="foto" src="/PODCAST_CHANNEL/images/An E.R.A.Univac 1103 computer in the 1950s.png"
+                    alt="computers">
+                <img class="foto"
+                    src="/PODCAST_CHANNEL/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+                    alt="operators">
+                <img class="foto" src="/PODCAST_CHANNEL/images/susan-kare.png" alt="susan-kare">
+            </div>
+        </section>
+
+        <section class="secciones">
+            <div id="seccion_topicos" class="text">
+                <div class="contenedor_titulo_temas">
+                    <div class="texto">
+                        <h3>Algunos de nuestros temas</h3><br>
                     </div>
                 </div>
-        </div>
+
+                <div id="temas_flex">
+                    <div class="contenedor_iconos_temas">
+                        <img src="/PODCAST_CHANNEL/images/icon1.svg" alt="icon1 ">
+                        <p class="parrafo_temas">Trabajo remoto</p>
+                    </div>
+                    <div class="contenedor_iconos_temas ">
+                        <img src="/PODCAST_CHANNEL/images/icon2.svg" alt="icon2 ">
+                        <p class="parrafo_temas">Repensando la programación</p>
+                    </div>
+                    <div class="contenedor_iconos_temas ">
+                        <img src="/PODCAST_CHANNEL/images/icon3.svg" alt="icon3 ">
+                        <p class="parrafo_temas">Bases del código</p>
+                    </div>
+                    <div class="contenedor_iconos_temas ">
+                        <img src="/PODCAST_CHANNEL/images/icon4.svg" alt="icon4 ">
+                        <p class="parrafo_temas">Seguridad informática</p>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <div class="footer_azul">
+            <section class="secciones">
+                <div class="contenedor_novedades">
+                    <!--contenedor azul-->
+                    <h3 class="texto_ultimas_novedades"><span class="texto_cajas_azules"> ¿Querés las últimas
+                            novedades?</span></h3><br>
+                    <div class="contenedor_episodios">
+                        <a href="/ " class="boton_verde boton_verde_episodios">ESCUCHÁ LOS EPISODIOS</a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
 
     </main>
 
-    <footer class="footer ">
-        <div class="derechos_reservados ">
+    <footer class="footer">
+        <div class="derechos_reservados">
             <h5>©- Hello blue pale dot</h5>
         </div>
-        <div class="icons ">
-            <i class="fab fa-spotify "></i>
-            <i class="fab fa-instagram "></i>
-            <i class="fab fa-twitter "></i>
-            <i class="fab fa-facebook-f "></i>
-            <i class="fab fa-telegram "></i>
+        <div class="icons">
+            <i class="fab fa-spotify"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-telegram"></i>
         </div>
 
     </footer>
