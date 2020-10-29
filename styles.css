@@ -341,6 +341,11 @@
         justify-content: space-evenly;
     }
 
+    .link_iconos {
+        text-decoration: none;
+        color: black;
+    }
+
     @media screen and (min-width: 700px) {
         .activar_menu,
         .cerrado,
@@ -510,15 +515,15 @@
         }
 
         .derechos_reservados {
-            padding-right: 300px;
+            display: flex;
+            justify-content: flex-start;
+            position: absolute;
+            padding-left: 100px;
         }
 
         .icons {
-            display: flex;
-            flex-direction: row;
-            justify-content: end;
+            position: absolute;
             letter-spacing: 25px;
-            padding-left: 1100px;
-            
+            padding-left: 1600px;            
         }
     }
