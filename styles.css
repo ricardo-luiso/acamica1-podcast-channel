@@ -326,11 +326,16 @@
         align-items: center;
     }
 
+    .contenedor_footer_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .derechos_reservados {
         text-align: center;
         letter-spacing: 2px;
-        width: 100%;
-        line-height: 70px;
+        line-height: 55px;
     }
 
     .icons {
@@ -514,15 +519,25 @@
             flex-direction: row;
         }
 
-        .derechos_reservados {
+        .contenedor_footer_flex {
+            width: 100%;
             display: flex;
-            justify-content: flex-start;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .derechos_reservados {
             position: absolute;
-            padding-left: 100px;
+            padding-left: 115px;
+            top: 21px;            
         }
 
         .icons {
+            width: 100%;
             position: absolute;
-            padding-left: 1300px;                                     
+            justify-content: flex-end;
+            padding-right: 65px;
+            letter-spacing: 20px;
+            top: 30px;                            
         }
     }
